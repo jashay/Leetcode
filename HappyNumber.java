@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class HappyNumber {
   public boolean isHappy(int n) {
     Set<Integer> set = new HashSet<>();
