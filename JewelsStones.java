@@ -6,6 +6,8 @@ public class JewelsStones {
   for (char x : jewels.toCharArray()) {
       set.add(x); 
   }
+  
+  
   int count = 0;
   
   for (char c : stones.toCharArray()) {
