@@ -14,7 +14,7 @@ public class MaxSubtreeSum {
     
     public int[] findFrequentTreeSum(TreeNode root) {
         
-        if (root == null) return new ;
+        if (root == null) return new int[1];
         dfs(root);
         List<Integer> list = new ArrayList<>();
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
