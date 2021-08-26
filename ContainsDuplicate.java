@@ -2,7 +2,7 @@ import java.util.*;
 
 public class ContainsDuplicate {
   
-    public boolean ContainsDuplicate(int[] nums) {
+    public boolean containsDuplicate(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         
         for (int num : nums) {
