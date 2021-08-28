@@ -1,3 +1,4 @@
+import java.util.*;
 public class DestinationCity {
   public String destCity(List<List<String>> paths) {
     Set<String> destinations = new HashSet<>();
