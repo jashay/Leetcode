@@ -1,3 +1,4 @@
+import java.util.*;
 public class Combinations {
   public void recursive(int n, List<List<Integer>> a, List<Integer> curr, int start, int k) {
     if (k==0) {
