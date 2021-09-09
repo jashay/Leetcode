@@ -1,5 +1,5 @@
 import java.util.*;
-public class subsets {
+public class Subsets {
   public void recursivePut(int[] nums, int i, Set<String> set, String curr) {
         
     set.add(curr);
