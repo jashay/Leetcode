@@ -1,5 +1,5 @@
 import java.util.*;
-public class CombinationSum_2 {
+public class CombinationSum2 {
   public void recursive(int[] candidates, int target, int start, List<List<Integer>> ans, List<Integer> curr) {
         
     if (target < 0) return;
