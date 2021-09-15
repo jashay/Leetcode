@@ -21,5 +21,5 @@ class WordBreak {
     }
     
     return dp[s.length()];
-}
+  }
 }
