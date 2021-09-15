@@ -1,4 +1,4 @@
-import java.util.8:
+import java.util.*;
 public class BrickWall {
   public int leastBricks(List<List<Integer>> wall) {
     int sum = 0;
