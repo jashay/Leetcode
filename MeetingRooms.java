@@ -1,3 +1,4 @@
+import java.util.*;
 public class MeetingRooms {
   public boolean canAttendMeetings(int[][] intervals) {
     Arrays.sort(intervals, (a,b) -> a[0] - b[0]);
