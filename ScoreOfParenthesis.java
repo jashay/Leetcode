@@ -1,3 +1,4 @@
+import java.util.*;
 public class ScoreOfParenthesis {
   public int scoreOfParentheses(String s) {
     Stack<Integer> stack = new Stack();
