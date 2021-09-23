@@ -1,35 +1,34 @@
 import java.util.*;
 public class LetterCombinationsOfPhoneNumber {
-  public void dfs(int i, String currString, List<String> ans, String digits, Map<Integer, String> map) {
-    if (i >= digits.length()) {
-        ans.add(currString);
+  private Map<Character, String> letters = Map.of(
+        '2', "abc", '3', "def", '4', "ghi", '5', "jkl", 
+        '6', "mno", '7', "pqrs", '8', "tuv", '9', "wxyz");
+    
+    List<String> list = new ArrayList();
+    
+    public void backtrack(String digits, int cur, String s) {
+        
+        if (cur == digits.length()) {
+            list.add(s);
+            return;
+        }
+        
+        String alphabets = letters.get(digits.charAt(cur));
+        for (char c : alphabets.toCharArray()) {
+            backtrack(digits, cur+1, s+c);
+        }
+        
         return;
     }
     
-    char currDigit = digits.charAt(i);
-    String chars = map.get(Integer.parseInt(String.valueOf(currDigit)));
     
-    for (char c : chars.toCharArray()) {
-        dfs(i+1, currString + c, ans, digits, map);
-    }
-    
-}
-
   public List<String> letterCombinations(String digits) {
-      List<String> ans = new ArrayList<>();
-      if (digits.length() ==0) return ans;
-      Map<Integer, String> map = new HashMap<>();
-      map.put(2,"abc");
-      map.put(3,"def");
-      map.put(4,"ghi");
-      map.put(5,"jkl");
-      map.put(6,"mno");
-      map.put(7,"pqrs");
-      map.put(8,"tuv");
-      map.put(9,"wxyz");
-      
-      dfs(0,"", ans, digits, map);
 
-      return ans;
+      backtrack(digits, 0, "");
+      if (list.size() > 1)
+          return list;
+      else
+          return new ArrayList<>();
+      
   }
 }
