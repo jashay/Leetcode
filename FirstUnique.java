@@ -1,29 +1,37 @@
 import java.util.*;
 public class FirstUnique {
-  Set<Integer> set = new HashSet();
-  Deque<Integer> unique = new LinkedList();
+  Set<Integer> set;
+  Set<Integer> dup;
   public FirstUnique(int[] nums) {
-      for (int x : nums) {
-          if (!set.contains(x)) {
-              set.add(x);
-              unique.addLast(x);
+      set = new LinkedHashSet();
+      dup = new HashSet();
+      
+      for (int num : nums) {
+          if (!set.contains(num) && !dup.contains(num)) {
+              set.add(num);
+          }
+          else {
+              set.remove(num);
+              dup.add(num);
           }
       }
   }
   
   public int showFirstUnique() {
-      return unique.peekFirst();
+      for (int ans : set) {
+          return ans;
+      }
+      return -1;
   }
   
   public void add(int value) {
-      if (!set.contains(value)) {
-          unique.addLast(value);
-          set.add(value);
-      } 
-      else {
-          while (unique.peekFirst() == value) {
-              unique.pollFirst();
+      int num = value;
+      if (!set.contains(num) && !dup.contains(num)) {
+              set.add(num);
           }
-      }
+          else {
+              set.remove(num);
+              dup.add(num);
+          }
   }
 }
