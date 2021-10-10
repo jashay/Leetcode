@@ -1,7 +1,7 @@
 import java.util.*;
 class ContinuousSubarraySum {
   public boolean checkSubarraySum(int[] nums, int k) {
-        //USing modular logic
+        //Using modular logic
         
         Map<Integer, Integer> map = new HashMap();
         int sum = 0;
