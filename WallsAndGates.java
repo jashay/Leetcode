@@ -1,3 +1,4 @@
+import java.util.*;
 public class WallsAndGates {
   
   int[][] directions = {{-1,0},{1,0},{0,1},{0,-1}};
