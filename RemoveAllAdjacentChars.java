@@ -1,3 +1,4 @@
+import java.util.*;
 public class RemoveAllAdjacentChars {
   public String removeDuplicates(String S) {
     Stack<Character> stack = new Stack();
