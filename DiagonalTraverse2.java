@@ -1,3 +1,4 @@
+import java.util.*;
 public class DiagonalTraverse2 {
   public int[] findDiagonalOrder(List<List<Integer>> nums) {
     List<Integer> list = new ArrayList();
