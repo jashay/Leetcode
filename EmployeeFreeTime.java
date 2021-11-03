@@ -1,4 +1,15 @@
+import java.util.*;
 public class EmployeeFreeTime {
+
+  class Interval {
+    int start;
+    int end;
+    Interval(int s, int e) {
+      this.start = s;
+      this.end = e;
+    }
+  }
+
   public List<Interval> employeeFreeTime(List<List<Interval>> schedule) {
     Queue<Interval> minHeap = new PriorityQueue<>((a,b) -> a.start - b.start);
     
