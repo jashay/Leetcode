@@ -1,7 +1,7 @@
 import java.util.*;
 public class CheckAndDelete {
-  Set<Integer> set = new HashSet();
-  List<TreeNode> ans = new ArrayList();
+  Set<Integer> set = new HashSet<>();
+  List<TreeNode> ans = new ArrayList<>();
     
   public TreeNode check(TreeNode root, boolean is_root) {
       if (root == null) return null;
