@@ -1,5 +1,11 @@
 class TreeToDoublyLinkedList {
-  Node head = null, tail = null;
+
+    class Node {
+        Node left;
+        Node right;
+    }
+
+    Node head = null, tail = null;
     
   public void dfs(Node root) {
       if (root == null) return;
