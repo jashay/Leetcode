@@ -9,7 +9,7 @@ public class MinDeletionsToUnique {
     
     Arrays.sort(count);
     int ans =0;
-    Set<Integer> set = new HashSet();
+    Set<Integer> set = new HashSet<>();
     for (int i= count.length-1; i>=0; i--) {
         while (count[i] != 0 && set.contains(count[i])) {
             count[i]--;
