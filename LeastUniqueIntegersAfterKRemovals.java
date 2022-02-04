@@ -1,5 +1,6 @@
 import java.util.*;
-public class LeastUniqueIntegersAfterKRemovals {
+
+:public class LeastUniqueIntegersAfterKRemovals {
   public int findLeastNumOfUniqueInts(int[] arr, int k) {
     List<int[]> list = new ArrayList<>();
     Map<Integer, Integer> map = new HashMap<>();
