@@ -32,6 +32,5 @@ class Solution {
 }
 
 // Sliding window of size cardPoints.length - k
-
 // Highest difference from total is our answer
 
