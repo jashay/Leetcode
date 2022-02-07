@@ -4,7 +4,7 @@ public class LargestNumber {
         
     if (nums== null || nums.length == 0) return "";
     
-    List<String> list = new ArrayList();
+    List<String> list = new ArrayList<>();
     StringBuilder sb = new StringBuilder();
     for (int n : nums)
         list.add(String.valueOf(n));

@@ -2,7 +2,7 @@ import java.util.*;
 public class Logger {
   Map<String, Integer> map;
   public Logger() {
-      map = new HashMap();
+      map = new HashMap<>();
   }
   
   public boolean shouldPrintMessage(int timestamp, String message) {
