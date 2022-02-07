@@ -4,7 +4,7 @@ class Trie {
       HashMap<Character, TrieNode> map;
       boolean isWord;
       TrieNode() {
-          this.map = new HashMap();
+          this.map = new HashMap<>();
           this.isWord = false;
       }
   }

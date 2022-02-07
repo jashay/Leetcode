@@ -17,8 +17,8 @@ class UndergroundSystem {
   Map<String, List<Integer>> timeMap;
   
   public UndergroundSystem() {
-      customerCheckInMap = new HashMap();
-      timeMap = new HashMap();
+      customerCheckInMap = new HashMap<>();
+      timeMap = new HashMap<>();
   }
   
   public void checkIn(int id, String stationName, int t) {
@@ -32,7 +32,7 @@ class UndergroundSystem {
           if (timeMap.containsKey(customerCheckInMap.get(id).key+"_"+stationName)) {
               list = timeMap.get(customerCheckInMap.get(id).key+"_"+stationName);
           }
-          else list = new ArrayList();
+          else list = new ArrayList<>();
           
           list.add(t-checkInTime);
           timeMap.put(customerCheckInMap.get(id).key+"_"+stationName, list);

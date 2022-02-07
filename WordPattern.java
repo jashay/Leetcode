@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public boolean wordPattern(String pattern, String s) {
-        Map<Character, Integer> map = new HashMap();
+        Map<Character, Integer> map = new HashMap<>();
         int index = 0;
         String pat = "";
         for (char c : pattern.toCharArray()) {
@@ -17,7 +17,7 @@ class Solution {
         }
         
         String[] arr = s.split(" ");
-        Map<String, Integer> m = new HashMap();
+        Map<String, Integer> m = new HashMap<>();
         index = 0;
         String s2 = "";
         
