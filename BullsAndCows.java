@@ -3,7 +3,7 @@ public class BullsAndCows {
   public String getHint(String secret, String guess) {
     int bulls = 0, cows = 0;
     StringBuilder potentialCows = new StringBuilder();
-    Map<Character, Integer> map = new HashMap();
+    Map<Character, Integer> map = new HashMap<>();
     
     for (int i=0 ;i<secret.length(); i++) {
         if (secret.charAt(i) == guess.charAt(i)) bulls++;

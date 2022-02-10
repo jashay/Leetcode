@@ -19,7 +19,7 @@ public class AlienDictionary {
   
   public String alienOrder(String[] words) {
       
-      Map<Character, List<Character>> graph = new HashMap();
+      Map<Character, List<Character>> graph = new HashMap<>();
       
       for (String word : words) {
           for (char c : word.toCharArray()) {
@@ -46,7 +46,7 @@ public class AlienDictionary {
           }
       }
 
-      Map<Character, Boolean> visited = new HashMap();
+      Map<Character, Boolean> visited = new HashMap<>();
       for (char key : graph.keySet()) {
           if (!dfs(graph, key, visited)) return "";
       }

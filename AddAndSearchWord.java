@@ -4,7 +4,7 @@ class AddAndSearchWord {
     Map<Character, TrieNode> map;
     boolean isWord;
     TrieNode() {
-        map = new HashMap();
+        map = new HashMap<>();
         isWord = false;
     }
 }

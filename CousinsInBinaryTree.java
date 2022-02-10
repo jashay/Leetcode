@@ -1,13 +1,13 @@
 import java.util.*;
 public class CousinsInBinaryTree {
   public boolean isCousins(TreeNode root, int x, int y) {
-    Queue<TreeNode> q = new LinkedList();
+    Queue<TreeNode> q = new LinkedList<>();
     q.add(root);
     
     while (!q.isEmpty()) {
         int size = q.size();
-        Set<String> pair = new HashSet();
-        Set<Integer> set = new HashSet();
+        Set<String> pair = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
         for (int i=0; i<size; i++) {
             TreeNode curr = q.poll();
             set.add(curr.val);
@@ -15,7 +15,6 @@ public class CousinsInBinaryTree {
                 pair.add(curr.left.val+"_"+curr.right.val);
                 q.add(curr.left);
                 q.add(curr.right);
-                continue;
             }
             else {
                 if (curr.left != null) q.add(curr.left);

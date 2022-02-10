@@ -1,13 +1,10 @@
-import java.util.*;
 public class DetectCapital {
   public boolean detectCapitalUse(String word) {
     int count = 0;
     for (char c :word.toCharArray()) {
-        if (!Character.isUpperCase(c)) {
-            continue;
-        } else {
+        if (Character.isUpperCase(c)) {
             count++;
-        }
+        } 
     }
     
     

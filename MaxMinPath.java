@@ -15,7 +15,7 @@ int[][] moves = {{0,1},{1,0},{-1,0}, {0,-1}};
 public int maximumMinimumPath(int[][] grid) {
     int m = grid.length;
     int n = grid[0].length;
-    Set<String> visited = new HashSet();
+    Set<String> visited = new HashSet<>();
     Queue<Pair> q = new PriorityQueue<>((a,b) -> b.cost - a.cost);
     q.add(new Pair(new int[]{0,0},grid[0][0]));
     int min = Integer.MAX_VALUE;

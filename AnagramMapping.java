@@ -1,7 +1,7 @@
 import java.util.*;
 public class AnagramMapping {
     public int[] anagramMappings(int[] nums1, int[] nums2) {
-        Map<Integer, Integer> map = new HashMap();
+        Map<Integer, Integer> map = new HashMap<>();
         
         for (int i=0; i<nums2.length; i++) {
             map.put(nums2[i], i);

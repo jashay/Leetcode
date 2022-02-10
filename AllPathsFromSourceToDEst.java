@@ -1,6 +1,6 @@
 import java.util.*;
 public class AllPathsFromSourceToDEst {
-  Map<Integer, Boolean> visited = new HashMap();
+  Map<Integer, Boolean> visited = new HashMap<>();
     
     public boolean dfs(int curr, int source, int destination, Map<Integer, List<Integer>> map) {
         if (visited.containsKey(curr)) return visited.get(curr);
@@ -18,12 +18,12 @@ public class AllPathsFromSourceToDEst {
         return true;
     }
     
-    public boolean leadsToDestination(int n, int[][] edges, int source, int destination) {
+    public boolean leadsToDestination(int[][] edges, int source, int destination) {
         
-        Map<Integer, List<Integer>> map = new HashMap();
+        Map<Integer, List<Integer>> map = new HashMap<>();
         
         for (int[] e : edges) {
-            map.putIfAbsent(e[0], new ArrayList());
+            map.putIfAbsent(e[0], new ArrayList<>());
             map.get(e[0]).add(e[1]);
         }
         

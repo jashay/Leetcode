@@ -11,31 +11,31 @@ public class AccountsMerge {
 }
 
 public List<List<String>> accountsMerge(List<List<String>> accounts) {
-    Map<String, List<String>> graph = new HashMap();
-    Map<String, String> emailToName = new HashMap();
+    Map<String, List<String>> graph = new HashMap<>();
+    Map<String, String> emailToName = new HashMap<>();
     
     for (List<String> account : accounts) {
         String name = "";
         for (String email : account) {
-            if (name == "") {
+            if (name.isBlank()) {
                 name = email;
                 continue;
             }
             
-            graph.computeIfAbsent(email, x -> new ArrayList()).add(account.get(1));
-            graph.computeIfAbsent(account.get(1), x -> new ArrayList()).add(email);
+            graph.computeIfAbsent(email, x -> new ArrayList<>()).add(account.get(1));
+            graph.computeIfAbsent(account.get(1), x -> new ArrayList<>()).add(email);
             emailToName.put(email, name);
         }
     }
-    Set<String> visited = new HashSet();
-    List<List<String>> res = new ArrayList();
+    Set<String> visited = new HashSet<>();
+    List<List<String>> res = new ArrayList<>();
     for (String email : graph.keySet()) {
         if (!visited.contains(email)) {
             visited.add(email);
-            Set<String> l = new HashSet();
+            Set<String> l = new HashSet<>();
             l.add(email);
             dfs(graph, visited, email, l);
-            List<String> list = new ArrayList();
+            List<String> list = new ArrayList<>();
             list.addAll(l);
             Collections.sort(list);
             list.add(0, emailToName.get(email));

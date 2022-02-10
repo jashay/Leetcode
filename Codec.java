@@ -2,7 +2,7 @@ import java.util.*;
 class Codec {    
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        Queue<TreeNode> q = new LinkedList();
+        Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
         StringBuilder sb = new StringBuilder();
         while (!q.isEmpty()) {
@@ -28,7 +28,7 @@ class Codec {
         if (arr.length ==0 || arr[0].equals("null")) return null;
         TreeNode root = new TreeNode(Integer.parseInt(arr[0]));
         int i =1;
-        Queue<TreeNode> q=  new LinkedList();
+        Queue<TreeNode> q=  new LinkedList<>();
         q.add(root);
         while (!q.isEmpty() && i < arr.length) {
             TreeNode node = q.poll();

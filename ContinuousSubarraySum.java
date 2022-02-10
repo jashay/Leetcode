@@ -3,7 +3,7 @@ class ContinuousSubarraySum {
   public boolean checkSubarraySum(int[] nums, int k) {
         //Using modular logic
         
-        Map<Integer, Integer> map = new HashMap();
+        Map<Integer, Integer> map = new HashMap<>();
         int sum = 0;
         map.put(0, -1);
         

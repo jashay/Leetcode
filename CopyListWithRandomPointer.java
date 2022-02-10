@@ -9,7 +9,7 @@ public class CopyListWithRandomPointer {
       this.val = val;
     }
   }
-  Map<Node, Node> map = new HashMap();
+  Map<Node, Node> map = new HashMap<>();
     
   public Node copyRandomList(Node head) {
       if (head == null) return null;

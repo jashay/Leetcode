@@ -18,7 +18,7 @@ class DetectCycleInMatrix {
     
     
     public boolean containsCycle(char[][] grid) {
-        Set<String> set = new HashSet();
+        Set<String> set = new HashSet<>();
         for (int i=0; i<grid.length; i++) {
             for (int j=0; j<grid[0].length; j++){
                 if (!set.contains(i+","+j)) 

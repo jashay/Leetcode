@@ -9,7 +9,7 @@ public class AllElementsInBST {
 }
 
 public List<Integer> merge(List<Integer> l1, List<Integer> l2) {
-    List<Integer> ans = new ArrayList();
+    List<Integer> ans = new ArrayList<>();
     int x = 0, y=0;
     
     while (x < l1.size() && y < l2.size()) {
@@ -34,8 +34,8 @@ public List<Integer> merge(List<Integer> l1, List<Integer> l2) {
 }
 
 public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
-    List<Integer> list1 = new ArrayList();
-    List<Integer> list2 = new ArrayList();
+    List<Integer> list1 = new ArrayList<>();
+    List<Integer> list2 = new ArrayList<>();
     
     inorder(root1, list1);
     inorder(root2, list2);

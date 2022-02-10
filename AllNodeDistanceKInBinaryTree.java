@@ -9,7 +9,7 @@ public class AllNodeDistanceKInBinaryTree {
     }
 }
 
-Map<TreeNode, TreeNode> map = new HashMap();
+Map<TreeNode, TreeNode> map = new HashMap<>();
 
 public void dfs(TreeNode root) {
     
@@ -27,15 +27,15 @@ public void dfs(TreeNode root) {
 
 
 public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
-    List<Integer> ans= new ArrayList();
+    List<Integer> ans= new ArrayList<>();
     if (root == null) return ans;
     
     dfs(root);
     
-    Queue<Pair> q = new LinkedList();
+    Queue<Pair> q = new LinkedList<>();
     q.add(new Pair(target, 0));
     
-    Set<TreeNode> set = new HashSet();
+    Set<TreeNode> set = new HashSet<>();
     set.add(target);
     
     while(!q.isEmpty()) {

@@ -9,7 +9,6 @@ public class CountNodes {
     int count = 0;
     
     while (!q.isEmpty()) {
-        int size = q.size();
         TreeNode curr = q.poll();
         count++;
         if (curr.left != null) q.add(curr.left);

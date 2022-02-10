@@ -39,7 +39,7 @@ public void rightBoundary(Stack<Integer> st, TreeNode root) {
 }
 
 public List<Integer> boundaryOfBinaryTree(TreeNode root) {
-    List<Integer> list= new ArrayList();
+    List<Integer> list= new ArrayList<>();
     list.add(root.val);
     if (root.left != null) {
         leftBoundary(list, root.left);

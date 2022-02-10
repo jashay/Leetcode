@@ -21,7 +21,7 @@ public TreeNode balance(List<Integer> list, int left, int right) {
 }
 
 public TreeNode balanceBST(TreeNode root) {
-    List<Integer> list = new ArrayList();
+    List<Integer> list = new ArrayList<>();
     inorder(root, list);
     
     return balance(list, 0, list.size()-1);
