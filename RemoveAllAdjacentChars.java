@@ -1,7 +1,7 @@
 import java.util.*;
 public class RemoveAllAdjacentChars {
   public String removeDuplicates(String S) {
-    Stack<Character> stack = new Stack();
+    Stack<Character> stack = new Stack<>();
     
     for (char c : S.toCharArray()) {
         if (!stack.isEmpty() && stack.peek() == c) {

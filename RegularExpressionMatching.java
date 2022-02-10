@@ -1,6 +1,6 @@
 import java.util.*;
 public class RegularExpressionMatching {
-  Map<String, Boolean> map = new HashMap();
+  Map<String, Boolean> map = new HashMap<>();
     
     public boolean dfs(int i, int j, String s, String p) {
         if (map.containsKey(i+","+j)) return map.get(i+","+j);

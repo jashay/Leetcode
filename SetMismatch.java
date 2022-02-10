@@ -1,7 +1,7 @@
 import java.util.*;
 public class SetMismatch {
   public int[] findErrorNums(int[] nums) {
-    Set<Integer> set = new HashSet();
+    Set<Integer> set = new HashSet<>();
     int sum = 0, dup=0;
     
     for (int x : nums) {

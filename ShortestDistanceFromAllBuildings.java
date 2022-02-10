@@ -12,7 +12,7 @@ class ShortestDistanceFromAllBuildings {
 int[][] moves = {{-1,0},{1,0},{0,1}, {0,-1}};
 
 public void generateCosts(int[][] grid, int i, int j, Pair[][] pGrid, Set<String> visited) {
-    Queue<int[]> q = new LinkedList();
+    Queue<int[]> q = new LinkedList<>();
     q.add(new int[]{i, j});
     int level = 0;
     while (!q.isEmpty()) {
