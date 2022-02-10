@@ -1,10 +1,10 @@
 import java.util.*;
 class RandomPickIndex {
-  Map<Integer, List<Integer>> map = new HashMap();
+  Map<Integer, List<Integer>> map = new HashMap<>();
   public RandomPickIndex(int[] nums) {
       for (int i=0; i<nums.length; i++) {
           int num = nums[i];
-          map.putIfAbsent(num, new ArrayList());
+          map.putIfAbsent(num, new ArrayList<>());
           map.get(num).add(i);
       }
   }

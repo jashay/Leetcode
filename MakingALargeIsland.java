@@ -15,7 +15,7 @@ class MakingALargeIsland {
 public int largestIsland(int[][] grid) {
     int max = 0, index = 3;
     int[][] moves = {{0,1}, {0,-1}, {1,0}, {-1,0}};
-    Map<Integer, Integer> map = new HashMap();
+    Map<Integer, Integer> map = new HashMap<>();
     for (int i=0; i<grid.length; i++) {
         for (int j =0; j<grid[0].length; j++) {
             if (grid[i][j] == 1) {
@@ -28,7 +28,7 @@ public int largestIsland(int[][] grid) {
         for (int j =0; j<grid[0].length; j++) {
             if (grid[i][j] == 0) {
                 int total = 1;
-                Set<Integer> visited= new HashSet();
+                Set<Integer> visited= new HashSet<>();
                 for (int[] move : moves) {
                     if (i+move[0] >= 0 && move[0]+i<grid.length 
                         && j+move[1] >= 0 && move[1]+j<grid[0].length 

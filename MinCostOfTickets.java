@@ -12,12 +12,12 @@ public class MinCostOfTickets {
           min = Math.min(min, dfs(i+30, days, costs, set) + costs[2]);
       }
       else min = dfs(i+1, days, costs, set);
-      
-      return memo[i] = min;
+      memo[i] = min;
+      return min;
   }
     
   public int mincostTickets(int[] days, int[] costs) {
-      Set<Integer> set = new HashSet();
+      Set<Integer> set = new HashSet<>();
       Arrays.fill(memo, -1);
       for (int x : days) set.add(x);
       return dfs(0, days, costs, set);

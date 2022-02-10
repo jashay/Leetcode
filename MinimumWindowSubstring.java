@@ -1,10 +1,10 @@
 import java.util.*;
 public class MinimumWindowSubstring {
-  Map<Character, Integer> map = new HashMap();   
+  Map<Character, Integer> map = new HashMap<>();   
     
   public int difference() {
-      for (char key : map.keySet()) {
-          if (map.get(key) > 0) return 1;
+      for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+          if (map.get(entry.getKey()) > 0) return 1;
       }
       return 0;
   }

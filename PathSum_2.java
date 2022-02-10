@@ -7,7 +7,7 @@ public class PathSum_2 {
     currentList.add(root.val);
     
     if (root.left == null && root.right == null && root.val == targetSum) {
-        output.add(new ArrayList(currentList));
+        output.add(new ArrayList<>(currentList));
     }
     else {
         checkDfs(root.left, targetSum - root.val, output, currentList);

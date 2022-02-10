@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class MinDepthOfBinartTree {
   private void dfs(TreeNode root, int currDepth, int[] minDepth) {
         

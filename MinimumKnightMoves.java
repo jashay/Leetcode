@@ -3,10 +3,10 @@ public class MinimumKnightMoves {
   public int minKnightMoves(int x, int y) {
     int[][] offsets = {{1, 2}, {2, 1}, {2, -1}, {1, -2},
             {-1, -2}, {-2, -1}, {-2, 1}, {-1, 2}};
-    Queue<int[]> q = new LinkedList();
+    Queue<int[]> q = new LinkedList<>();
     q.add(new int[]{0,0});
     boolean[][] visited = new boolean[605][605];
-    int steps = 0, flag = 0;
+    int steps = 0;
     while (!q.isEmpty()) {
         int size = q.size();
         

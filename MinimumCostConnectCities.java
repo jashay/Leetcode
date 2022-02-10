@@ -11,12 +11,12 @@ public class MinimumCostConnectCities {
 
 public int minimumCost(int n, int[][] connections) {
     if (connections.length < n-1) return -1;
-    Map<Integer, List<Pair>> graph = new HashMap();
-    Set<Integer> visited = new HashSet();
+    Map<Integer, List<Pair>> graph = new HashMap<>();
+    Set<Integer> visited = new HashSet<>();
     int total = 0;
     for (int[] conn : connections ) {
-        graph.putIfAbsent(conn[0], new ArrayList());
-        graph.putIfAbsent(conn[1], new ArrayList());
+        graph.putIfAbsent(conn[0], new ArrayList<>());
+        graph.putIfAbsent(conn[1], new ArrayList<>());
         
         graph.get(conn[1]).add(new Pair(conn[0], conn[2]));
         graph.get(conn[0]).add(new Pair(conn[1], conn[2]));

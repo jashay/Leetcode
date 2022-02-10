@@ -12,7 +12,7 @@ public class MinimumGeneticMutation {
         return -1;
     }
     
-    Queue<String> q = new LinkedList();
+    Queue<String> q = new LinkedList<>();
     q.add(start);
     int count=0;
     

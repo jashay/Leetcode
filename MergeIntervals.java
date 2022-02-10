@@ -2,7 +2,7 @@ import java.util.*;
 public class MergeIntervals {
   public int[][] merge(int[][] intervals) {
         
-    List<int[]> list = new ArrayList();
+    List<int[]> list = new ArrayList<>();
     
     Arrays.sort(intervals, (a,b) -> a[0] - b[0]);
     int currLast = intervals[0][1], currFirst = intervals[0][0];

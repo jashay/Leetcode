@@ -2,13 +2,13 @@ import java.util.*;
 public class ProductOfEncodedSegments {
   public List<List<Integer>> findRLEArray(int[][] encoded1, int[][] encoded2) {
     int p1 = 0, p2 = 0;
-    List<List<Integer>> ans = new ArrayList();
+    List<List<Integer>> ans = new ArrayList<>();
     
     while (p1 < encoded1.length && p2 < encoded2.length) {
         int minFreq = Math.min(encoded1[p1][1], encoded2[p2][1]);
         int prod = encoded1[p1][0] * encoded2[p2][0];
         
-        List<Integer> t = new ArrayList();
+        List<Integer> t = new ArrayList<>();
         t.add(prod);
         t.add(minFreq);
         ans.add(t);
@@ -20,7 +20,7 @@ public class ProductOfEncodedSegments {
         if (encoded2[p2][1] == 0) p2++;
     }
     
-    List<List<Integer>> res = new ArrayList();
+    List<List<Integer>> res = new ArrayList<>();
     int prevProd = ans.get(0).get(0), freq = ans.get(0).get(1);
     for (int i=1; i<ans.size(); i++) {
         if (ans.get(i).get(0) == prevProd) {
@@ -28,7 +28,7 @@ public class ProductOfEncodedSegments {
             continue;
         }
         
-        List<Integer> t = new ArrayList();
+        List<Integer> t = new ArrayList<>();
         t.add(prevProd);
         t.add(freq);
         res.add(t);
@@ -36,7 +36,7 @@ public class ProductOfEncodedSegments {
         prevProd = ans.get(i).get(0);
         freq = ans.get(i).get(1);
     }
-    List<Integer> t = new ArrayList();
+    List<Integer> t = new ArrayList<>();
     t.add(prevProd);
     t.add(freq);
     res.add(t);
