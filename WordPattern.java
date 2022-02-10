@@ -1,6 +1,5 @@
 import java.util.*;
-
-class Solution {
+class WordPattern {
     public boolean wordPattern(String pattern, String s) {
         Map<Character, Integer> map = new HashMap<>();
         int index = 0;

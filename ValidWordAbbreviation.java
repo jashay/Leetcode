@@ -1,4 +1,3 @@
-import java.util.*;
 public class ValidWordAbbreviation {
   public boolean validWordAbbreviation(String word, String abbr) {
     StringBuilder sb = new StringBuilder();

@@ -26,7 +26,7 @@ public int leastInterval(char[] tasks, int n) {
     
     while (!maxHeap.isEmpty()) {
         int k=n+1;
-        List<Task> l = new ArrayList();
+        List<Task> l = new ArrayList<>();
         while (k>0 && !maxHeap.isEmpty()) {
             Task t = maxHeap.poll();
             t.count--;

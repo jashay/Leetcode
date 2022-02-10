@@ -1,4 +1,3 @@
-import java.util.*;
 public class SwapNodes {
   public ListNode swapNodes(ListNode head, int k) {
     int c = 0;
@@ -13,9 +12,8 @@ public class SwapNodes {
     }
     
     
-    if (k==c) {
-        if (k==1)
-            return head;
+    if (k==c && c==1) {
+        return head;
     }
     temp = head;
     

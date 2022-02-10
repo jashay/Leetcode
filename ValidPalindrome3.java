@@ -1,6 +1,6 @@
 import java.util.*;
 public class ValidPalindrome3 {
-  Map<String, Boolean> dp = new HashMap();
+  Map<String, Boolean> dp = new HashMap<>();
     public boolean isPalindrome (String s, int end, int start) {
         while (start < end) {
             if (s.charAt(start) != s.charAt(end)) {
