@@ -1,6 +1,6 @@
 import java.util.*;
 class RootToLeafPaths {
-  List<String> ans = new ArrayList();
+  List<String> ans = new ArrayList<>();
     
     public void dfs(TreeNode root, String currPath) {
         if (root == null) return;

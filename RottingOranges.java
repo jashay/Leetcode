@@ -1,7 +1,7 @@
 import java.util.*;
 public class RottingOranges {
   public int orangesRotting(int[][] grid) {
-    Queue<int[]> q = new LinkedList();
+    Queue<int[]> q = new LinkedList<>();
     int count=0;
     for (int i=0; i<grid.length; i++) {
         for (int j=0; j<grid[0].length; j++) {
