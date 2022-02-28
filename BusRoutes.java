@@ -4,20 +4,20 @@ public class BusRoutes {
     public int numBusesToDestination(int[][] routes, int source, int target) {
         
         if (source == target) return 0;
-        Map<Integer, List<Integer>> map = new HashMap();
+        Map<Integer, List<Integer>> map = new HashMap<>();
         
         // Build graph
         for (int bus = 0; bus<routes.length; bus++) {
             for (int stop : routes[bus]) {
-                map.putIfAbsent(stop, new ArrayList());
+                map.putIfAbsent(stop, new ArrayList<>());
                 map.get(stop).add(bus);
             }
         }
     
-        Set<Integer> visited = new HashSet();
+        Set<Integer> visited = new HashSet<>();
         if (!map.containsKey(source)) return -1;
         
-        Queue<Integer> q = new LinkedList();
+        Queue<Integer> q = new LinkedList<>();
         q.offer(source);
         
         int level = 0;
