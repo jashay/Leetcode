@@ -11,8 +11,8 @@ public class GraphBipartite {
     
 }
 public boolean isBipartite(int[][] graph) {
-    Queue<Pair> q = new LinkedList();
-    Map<Integer, Integer> visited  = new HashMap();
+    Queue<Pair> q = new LinkedList<>();
+    Map<Integer, Integer> visited  = new HashMap<>();
     
     for (int j=0; j<graph.length; j++) {
         if (visited.containsKey(j)) continue;

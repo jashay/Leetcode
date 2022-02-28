@@ -1,4 +1,3 @@
-import java.util.*;
 public class InsertIntoBST {
   public TreeNode insertIntoBST(TreeNode root, int val) {
     TreeNode curr = root;

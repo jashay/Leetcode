@@ -1,7 +1,7 @@
 import java.util.*;
 public class HighFive {
   public int[][] highFive(int[][] items) {
-    Map<Integer, List<Integer>> map = new LinkedHashMap();
+    Map<Integer, List<Integer>> map = new LinkedHashMap<>();
     
     for (int[] i : items) {
         List<Integer> list;
@@ -9,15 +9,15 @@ public class HighFive {
             list = map.get(i[0]);
         }
         else {
-            list = new ArrayList();
+            list = new ArrayList<>();
         }
         list.add(i[1]);
         map.put(i[0], list);
     }
-    List<int[]> res = new ArrayList();
+    List<int[]> res = new ArrayList<>();
     
-    for (int key : map.keySet()) {
-        List<Integer> li = map.get(key);
+    for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
+        List<Integer> li = entry.getValue();
         Collections.sort(li, (a,b) -> b-a);
         
         int sum = 0;
@@ -26,7 +26,7 @@ public class HighFive {
         }
         int avg = sum/5;
         
-        res.add(new int[]{key, avg});
+        res.add(new int[]{entry.getKey(), avg});
     }
     
     int[][] ans=new int[res.size()][2];

@@ -13,11 +13,11 @@ public class VerticalOrderTraversal {
 
 
 public List<List<Integer>> verticalOrder(TreeNode root) {
-    Map<Integer, List<Integer>> map = new TreeMap();
-    List<List<Integer>> ans = new ArrayList();
+    Map<Integer, List<Integer>> map = new TreeMap<>();
+    List<List<Integer>> ans = new ArrayList<>();
     
     if (root == null) return ans;
-    Queue<Pair> q = new LinkedList();
+    Queue<Pair> q = new LinkedList<>();
     q.add(new Pair(root, 0));
     
     while(!q.isEmpty()) {
@@ -30,7 +30,7 @@ public List<List<Integer>> verticalOrder(TreeNode root) {
                 list = map.get(p.balance);
             }
             else {
-                list = new ArrayList();
+                list = new ArrayList<>();
             }
             list.add(p.node.val);
             map.put(p.balance, list);
@@ -42,8 +42,8 @@ public List<List<Integer>> verticalOrder(TreeNode root) {
     
     
     
-    for (int key : map.keySet()) {
-        ans.add(map.get(key));
+    for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
+        ans.add(entry.getValue());
     }
     
     return ans;

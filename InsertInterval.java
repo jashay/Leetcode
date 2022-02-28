@@ -2,8 +2,8 @@ import java.util.*;
 public class InsertInterval {
   public int[][] insert(int[][] intervals, int[] newInterval) {
     List<int[]> intervalList = Arrays.asList(intervals);
-    List<int[]> l = new ArrayList(intervalList);
-    List<int[]> ans = new ArrayList();
+    List<int[]> l = new ArrayList<>(intervalList);
+    List<int[]> ans = new ArrayList<>();
     l.add(new int[] {newInterval[0], newInterval[1]});
     
     Collections.sort(l, (a,b) -> a[0] - b[0]);

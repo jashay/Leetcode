@@ -1,7 +1,7 @@
 import java.util.*;
 public class SimplifyPath {
   public String simplifyPath(String path) {
-    Stack<String> stack = new Stack();
+    Stack<String> stack = new Stack<String>();
     String[] components = path.split("/");
     
     for (String curr : components) {

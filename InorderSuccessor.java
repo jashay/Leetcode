@@ -1,6 +1,6 @@
 import java.util.*;
 public class InorderSuccessor {
-  List<TreeNode> list = new ArrayList();
+  List<TreeNode> list = new ArrayList<>();
     public void inorderTraversal(TreeNode root) {
         if (root == null) return;
         

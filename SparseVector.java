@@ -1,7 +1,7 @@
 import java.util.*;
 class SparseVector {
     
-  Set<Integer> nonZeroIndexes = new HashSet();
+  Set<Integer> nonZeroIndexes = new HashSet<>();
   int[] nums;
   SparseVector(int[] nums) {
       for (int i=0; i<nums.length; i++) {

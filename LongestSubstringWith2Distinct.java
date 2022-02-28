@@ -1,7 +1,7 @@
 import java.util.*;
 public class LongestSubstringWith2Distinct {
   public int lengthOfLongestSubstringTwoDistinct(String s) {
-    Map<Character, Integer> map = new HashMap();
+    Map<Character, Integer> map = new HashMap<>();
     int right = 0, left =0, max = Integer.MIN_VALUE;
     
     for (right = 0; right<s.length(); right++) {

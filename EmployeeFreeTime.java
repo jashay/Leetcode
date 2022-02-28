@@ -19,7 +19,7 @@ public class EmployeeFreeTime {
         }
     }
     int currstart = minHeap.poll().end;
-    List<Interval> list = new ArrayList();
+    List<Interval> list = new ArrayList<>();
     while (!minHeap.isEmpty()) {
         Interval curr = minHeap.poll();
         if (curr.start <= currstart) {

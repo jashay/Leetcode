@@ -2,7 +2,7 @@ import java.util.*;
 class SubarraySumEqualsK {
   public int subarraySum(int[] nums, int k) {
     int currSum = 0;
-    Map<Integer, Integer> map = new HashMap();
+    Map<Integer, Integer> map = new HashMap<>();
     int ans = 0;
     map.put(0, 1);
     

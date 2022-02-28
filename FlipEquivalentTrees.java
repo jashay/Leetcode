@@ -21,11 +21,11 @@ public class FlipEquivalentTrees {
         
         if (map1.size() != map2.size()) return false;
         
-        for (int key : map1.keySet()) {
-            if (!map2.containsKey(key)) return false;
+        for (Map.Entry<Integer, String> entry : map1.entrySet()) {
+            if (!map2.containsKey(entry.getKey())) return false;
             
-            String s1 = map1.get(key);
-            String s2 = map2.get(key);
+            String s1 = map1.get(entry.getKey());
+            String s2 = map2.get(entry.getKey());
             char[] arr1 = s1.toCharArray();
             char[] arr2 = s2.toCharArray();
             

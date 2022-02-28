@@ -17,7 +17,7 @@ public class ValidateIPAddress {
     }
     
     String[] arr2 = IP.split(":", 8);
-    Set<Character> set= new HashSet();
+    Set<Character> set= new HashSet<>();
     set.add('a');
     set.add('b');
     set.add('c');

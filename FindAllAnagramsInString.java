@@ -2,7 +2,7 @@ import java.util.*;
 class FindAllAnagramsInString {
   public List<Integer> findAnagrams(String s, String p) {
     int n = s.length(), m = p.length();
-    List<Integer> ans = new ArrayList();
+    List<Integer> ans = new ArrayList<>();
     if (n<m) return ans;
     
     int[] pCount = new int[26];

@@ -1,9 +1,9 @@
 import java.util.*;
 class MaxSumOfLevels {
   public int maxLevelSum(TreeNode root) {
-    Queue<TreeNode> q = new LinkedList();
+    Queue<TreeNode> q = new LinkedList<>();
     q.add(root);
-    List<Integer> list = new ArrayList();
+    List<Integer> list = new ArrayList<>();
     while (!q.isEmpty()) {
         int size = q.size();
         int sum = 0;

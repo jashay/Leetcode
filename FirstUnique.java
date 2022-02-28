@@ -3,8 +3,8 @@ public class FirstUnique {
   Set<Integer> set;
   Set<Integer> dup;
   public FirstUnique(int[] nums) {
-      set = new LinkedHashSet();
-      dup = new HashSet();
+      set = new LinkedHashSet<>();
+      dup = new HashSet<>();
       
       for (int num : nums) {
           if (!set.contains(num) && !dup.contains(num)) {

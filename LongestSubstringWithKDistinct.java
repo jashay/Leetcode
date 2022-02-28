@@ -1,7 +1,7 @@
 import java.util.*;
 public class LongestSubstringWithKDistinct {
   public int lengthOfLongestSubstringKDistinct(String s, int k) {
-    Map<Character, Integer> map = new HashMap();
+    Map<Character, Integer> map = new HashMap<>();
     int right = 0, left =0, max = Integer.MIN_VALUE;
     
     if (k==0) return 0;

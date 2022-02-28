@@ -4,7 +4,7 @@ public class WallsAndGates {
   int[][] directions = {{-1,0},{1,0},{0,1},{0,-1}};
     
   public void wallsAndGates(int[][] rooms) {
-      Queue<int[]> q = new LinkedList();
+      Queue<int[]> q = new LinkedList<>();
       
       for (int i=0; i<rooms.length; i++) {
           for (int j=0; j<rooms[0].length; j++) {

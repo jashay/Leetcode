@@ -1,8 +1,8 @@
 import java.util.*;
 public class GroupShiftedStrings {
   public List<List<String>> groupStrings(String[] strings) {
-    List<List<String>> ans = new ArrayList();
-    Map<String, List<String>> map = new HashMap();
+    List<List<String>> ans = new ArrayList<>();
+    Map<String, List<String>> map = new HashMap<>();
     
     for (String s : strings) {
         String key = "0+";
@@ -14,7 +14,7 @@ public class GroupShiftedStrings {
             c = s.charAt(i);
         }
         
-        map.putIfAbsent(key, new ArrayList());
+        map.putIfAbsent(key, new ArrayList<>());
         map.get(key).add(s);
     }
 

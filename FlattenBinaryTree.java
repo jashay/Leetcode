@@ -7,13 +7,11 @@ public class FlattenBinaryTree {
     
     dfs(root.left, list);
     dfs(root.right, list);
-    
-    return;
-}
+  }
 
 
   public void flatten(TreeNode root) {
-      List<Integer> list = new ArrayList();
+      List<Integer> list = new ArrayList<>();
       if (root == null) return;
       dfs(root, list);
       TreeNode temp = root;

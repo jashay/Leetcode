@@ -19,7 +19,7 @@ public class DistanceBetweenNodes {
 public int findDistance(TreeNode root, int p, int q) {
     TreeNode ancestor = LCA(root, p, q);
     
-    Queue<TreeNode> queue = new LinkedList();
+    Queue<TreeNode> queue = new LinkedList<>();
     queue.add(ancestor);
     boolean found1 = false, found2 = false;
     int level = 0, ans=0;
