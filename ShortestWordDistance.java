@@ -1,7 +1,7 @@
 import java.util.*;
 class ShortestWordDistance {
   public int shortestDistance(String[] wordsDict, String word1, String word2) {
-    Map<String, List<Integer>> map = new HashMap();
+    Map<String, List<Integer>> map = new HashMap<>();
     
     for (int i=0; i<wordsDict.length; i++) {
         String s = wordsDict[i];
@@ -10,7 +10,7 @@ class ShortestWordDistance {
             list = map.get(s);
         }
         else {
-            list = new ArrayList();
+            list = new ArrayList<>();
         }
         list.add(i);
         map.put(s, list);

@@ -51,7 +51,7 @@ public int shortestDistance(int[][] grid) {
         for (int j=0; j<n; j++) {
             if (grid[i][j] == 1) {
                 bc++;
-                Set<String> visited = new HashSet();
+                Set<String> visited = new HashSet<>();
                 generateCosts(grid, i, j, pGrid, visited);
             }
         }
