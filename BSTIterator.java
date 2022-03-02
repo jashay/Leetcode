@@ -9,12 +9,10 @@ public class BSTIterator {
       inorderTraversal(root.left);
       list.add(root.val);
       inorderTraversal(root.right);
-      
-      return;
   }
   
   public BSTIterator(TreeNode root) {
-      list = new ArrayList();
+      list = new ArrayList<>();
       index = -1;
       
       inorderTraversal(root);

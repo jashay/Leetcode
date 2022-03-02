@@ -1,7 +1,8 @@
 import java.util.*;
 public class BullsAndCows {
   public String getHint(String secret, String guess) {
-    int bulls = 0, cows = 0;
+    int bulls = 0;
+    int cows = 0;
     StringBuilder potentialCows = new StringBuilder();
     Map<Character, Integer> map = new HashMap<>();
     

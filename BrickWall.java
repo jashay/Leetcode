@@ -6,7 +6,7 @@ public class BrickWall {
         sum+=x;
     }
     
-    Map<Integer, Integer> map = new HashMap();
+    Map<Integer, Integer> map = new HashMap<>();
     
     for (List<Integer> list : wall) {
         int currSum = 0;
@@ -17,9 +17,8 @@ public class BrickWall {
         }
     }
     int max = 0;
-    for (int key : map.keySet()) {
-        int v = map.get(key);
-        
+    for (Map.Entry<Integer,Integer> entry : map.entrySet()) {
+        int v = entry.getValue();
         max = Math.max(max, v);
     }
     

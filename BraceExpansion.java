@@ -1,7 +1,7 @@
 import java.util.*;
 public class BraceExpansion {
-    List<String> list = new ArrayList();
-    Map<Character, String> map = new HashMap();
+    List<String> list = new ArrayList<>();
+    Map<Character, String> map = new HashMap<>();
     public void dfs(String str, int i, String curr) {
         if (i==str.length()) {
             list.add(curr);
