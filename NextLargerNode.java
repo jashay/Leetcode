@@ -1,7 +1,7 @@
 import java.util.*;
 class NextLargerNode {
   public int[] nextLargerNodes(ListNode head) {
-    List<Integer> list = new ArrayList();
+    List<Integer> list = new ArrayList<>();
     Stack<Integer> stack = new Stack();
 
     while (head != null) {

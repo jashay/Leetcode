@@ -9,7 +9,7 @@ public class CourseSchedule {
         visited.remove(child);
     }
     
-    graph.put(curr, new ArrayList());
+    graph.put(curr, new ArrayList<>());
     
     return true;
 }
@@ -17,13 +17,13 @@ public class CourseSchedule {
 
 public boolean canFinish(int numCourses, int[][] prerequisites) {
     
-    Map<Integer, List<Integer>> graph = new HashMap();
-    for (int i=0; i<numCourses; i++) graph.put(i, new ArrayList());
+    Map<Integer, List<Integer>> graph = new HashMap<>();
+    for (int i=0; i<numCourses; i++) graph.put(i, new ArrayList<>());
     for (int[] pre : prerequisites) {
         graph.get(pre[0]).add(pre[1]);
     }
     
-    Set<Integer> visited= new HashSet();
+    Set<Integer> visited= new HashSet<>();
     
     for (int key : graph.keySet()) {
         visited.add(key);

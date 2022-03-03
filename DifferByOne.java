@@ -1,7 +1,7 @@
 import java.util.*;
 class DifferByOne {
   public boolean differByOne(String[] dict) {
-    Set<String> set = new HashSet();
+    Set<String> set = new HashSet<>();
     
     for (String w : dict) {
         for (int i=0; i<w.length(); i++) {

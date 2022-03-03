@@ -11,14 +11,14 @@ public class NestedIterator {
     }
 
     List<NestedInteger> getList() {
-      return null;
+      return new ArrayList<>();
     }
   }
 
   List<Integer> list;
   int index = 0;
   public NestedIterator(List<NestedInteger> nestedList) {
-      list = new ArrayList();
+      list = new ArrayList<>();
       
       flatten(nestedList);
   }
@@ -32,7 +32,6 @@ public class NestedIterator {
               flatten(curr.getList());
           }
       }
-      return;
   }
 
   public Integer next() {
