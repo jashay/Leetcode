@@ -13,9 +13,9 @@ public class VerticalOrderTraversalBinaryTree {
 
 
 public List<List<Integer>> verticalTraversal(TreeNode root) {
-    Queue<Triplet> q =new LinkedList();
+    Queue<Triplet> q =new LinkedList<>();
     q.add(new Triplet(root, 0 ,0));
-    List<Triplet> list = new ArrayList();
+    List<Triplet> list = new ArrayList<>();
     while (!q.isEmpty()) {
         Triplet curr = q.poll();
         list.add(curr);
@@ -24,8 +24,8 @@ public List<List<Integer>> verticalTraversal(TreeNode root) {
     }
     
     Collections.sort(list, (a,b) -> a.col - b.col);
-    List<List<Triplet>> fin = new ArrayList();
-    List<Triplet> temp = new ArrayList();
+    List<List<Triplet>> fin = new ArrayList<>();
+    List<Triplet> temp = new ArrayList<>();
     temp.add(list.get(0));
     int currCol = list.get(0).col;
     for (int i=1; i<list.size(); i++) {
@@ -46,7 +46,7 @@ public List<List<Integer>> verticalTraversal(TreeNode root) {
             });
         
             fin.add(temp);
-            temp = new ArrayList();
+            temp = new ArrayList<>();
             temp.add(list.get(i));
             currCol = list.get(i).col;
         }
@@ -63,9 +63,9 @@ public List<List<Integer>> verticalTraversal(TreeNode root) {
     });
     fin.add(temp);
     
-    List<List<Integer>> ans = new ArrayList();
+    List<List<Integer>> ans = new ArrayList<>();
     for (List<Triplet> col : fin) {
-        List<Integer> t = new ArrayList();
+        List<Integer> t = new ArrayList<>();
         for (int i=0; i<col.size(); i++) {
             t.add(col.get(i).node.val);
         }

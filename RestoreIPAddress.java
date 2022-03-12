@@ -1,6 +1,6 @@
 import java.util.*;
 public class RestoreIPAddress {
-  List<String> ans = new ArrayList();
+  List<String> ans = new ArrayList<>();
     
     public void backtrack(String s, String ip, int i, int count) {
         if (count>4) return;

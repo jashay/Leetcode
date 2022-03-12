@@ -1,6 +1,6 @@
 import java.util.*;
 public class RemoveInvalidParenthesis {
-  List<String> ans = new ArrayList();
+  List<String> ans = new ArrayList<>();
     
     public int minRemove(String s) {
         int open =0, toRemove = 0;
@@ -18,7 +18,7 @@ public class RemoveInvalidParenthesis {
         
     }
     
-    Set<String> set = new HashSet();
+    Set<String> set = new HashSet<>();
     
     public void backtrack(String s, String curr, int i, int open, int minRemove) {
         

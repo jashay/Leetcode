@@ -4,7 +4,7 @@ public class NumberOfGoodWaysToSplit {
         
     int[] leftFreq = new int[s.length()];
     int[] rightFreq = new int[s.length()];
-    Set<Character> set = new HashSet();
+    Set<Character> set = new HashSet<>();
     leftFreq[0] = 1;
     set.add(s.charAt(0));
     for (int i=1; i<s.length(); i++) {
@@ -17,7 +17,7 @@ public class NumberOfGoodWaysToSplit {
             leftFreq[i] = leftFreq[i-1]+1;
         }
     }
-    set = new HashSet();
+    set = new HashSet<>();
     rightFreq[s.length()-1] = 0;
     for (int i=s.length()-2; i>=0; i--) {
         char c = s.charAt(i+1);

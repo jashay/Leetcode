@@ -1,7 +1,7 @@
 import java.util.*;
 public class NumberOfConnections {
-  Map<Integer, List<Integer>> graph = new HashMap();
-    Set<Integer> visited  = new HashSet();
+  Map<Integer, List<Integer>> graph = new HashMap<>();
+    Set<Integer> visited  = new HashSet<>();
     
     public void dfs(int x) {
         visited.add(x);
@@ -14,7 +14,7 @@ public class NumberOfConnections {
     public int makeConnected(int n, int[][] connections) {
         if (connections.length < n-1) return -1;
         
-        for (int i=0; i<n; i++) graph.put(i, new ArrayList());
+        for (int i=0; i<n; i++) graph.put(i, new ArrayList<>());
         
         for (int[] con : connections) {
             int x = con[0];

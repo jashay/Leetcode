@@ -20,12 +20,12 @@ class SmallestSubtreeDeepestNodes {
 }
 
 public TreeNode subtreeWithAllDeepest(TreeNode root) {
-    Queue<TreeNode> q = new LinkedList();
+    Queue<TreeNode> q = new LinkedList<>();
     q.add(root);
-    List<Integer> level = new ArrayList();
+    List<Integer> level = new ArrayList<>();
     while (!q.isEmpty()) {
         int size = q.size();
-        level = new ArrayList();
+        level = new ArrayList<>();
         for (int i=0; i<size; i++) {
             TreeNode curr = q.poll();
             level.add(curr.val);

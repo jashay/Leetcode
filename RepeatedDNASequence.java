@@ -1,8 +1,8 @@
 import java.util.*;
 public class RepeatedDNASequence {
   public List<String> findRepeatedDnaSequences(String s) {
-    Map<String, Integer> map= new HashMap();
-    List<String> ans = new ArrayList();
+    Map<String, Integer> map= new HashMap<>();
+    List<String> ans = new ArrayList<>();
     String sub = "";
     for (int end=0; end<s.length(); end++) {
         if (sub.length() >= 10) {  

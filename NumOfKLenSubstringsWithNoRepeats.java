@@ -5,7 +5,7 @@ public class NumOfKLenSubstringsWithNoRepeats {
     int count=0;
     if (k>s.length()) return 0;
     
-    Map<Character,Integer> map = new HashMap();
+    Map<Character,Integer> map = new HashMap<>();
     char temp;
     int dups = 0;
     for (end=0; end<s.length(); end++) {

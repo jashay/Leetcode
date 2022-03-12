@@ -1,7 +1,7 @@
 import java.util.*;
 public class VerifyAlienDictionary {
   public boolean isAlienSorted(String[] words, String order) {
-    Map<Character, Integer> map = new HashMap();
+    Map<Character, Integer> map = new HashMap<>();
     
     for (int i=0; i<order.length(); i++) {
         map.put(order.charAt(i), map.getOrDefault(order.charAt(i), 0)+i);

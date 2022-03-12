@@ -1,7 +1,7 @@
 import java.util.*;
 public class ValidateStackSequences {
   public boolean validateStackSequences(int[] pushed, int[] popped) {
-    Set<Integer> set = new HashSet();
+    Set<Integer> set = new HashSet<>();
     Stack<Integer> stack = new Stack();
     stack.push(pushed[0]);
     set.add(pushed[0]);

@@ -3,7 +3,7 @@ public class RemoveOuterMostParenthesis {
   public String removeOuterParentheses(String s) {
         
     int balance = 0;
-    List<String> list = new ArrayList();
+    List<String> list = new ArrayList<>();
     StringBuilder curr = new StringBuilder();
     for (char c : s.toCharArray()) {
         curr.append(c);
