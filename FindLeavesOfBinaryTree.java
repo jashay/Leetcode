@@ -1,11 +1,11 @@
 import java.util.*;
 public class FindLeavesOfBinaryTree {
   public List<List<Integer>> findLeaves(TreeNode root) {
-    List<List<Integer>> ans=new ArrayList();
+    List<List<Integer>> ans=new ArrayList<>();
     while (root != null) {
-        Deque<TreeNode> q = new LinkedList();
+        Deque<TreeNode> q = new LinkedList<>();
         q.addLast(root);
-        List<Integer> currLeaves = new ArrayList();
+        List<Integer> currLeaves = new ArrayList<>();
         while (!q.isEmpty()) {
             int size = q.size();
             for(int i=0; i<size; i++) {
